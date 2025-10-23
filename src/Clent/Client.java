@@ -9,7 +9,7 @@ public class Client {
     public static void main(String[] args) {
         try {
             System.out.println("Je suis un client pas encore connecté...");
-            Socket socketClient = new Socket("localhost", 6005);
+            Socket socketClient = new Socket("192.168.56.1", 6005);
 
             // Création des flux
             BufferedReader in = new BufferedReader(new InputStreamReader(socketClient.getInputStream()));
